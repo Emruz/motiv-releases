@@ -29,9 +29,9 @@ Motiv checks for updates on its own, or use **About → Check for Updates**. Whe
 
 ## Help
 
-Help is in the app, under **Settings → Getting started**: help topics (including connecting calendars), the setup wizard, the in-meeting guide and What's new.
+Help is in the app: **Settings → Getting started** has help topics, the setup wizard and a tour of using Motiv in a meeting. Calendar setup is in **Settings → Calendars & people → How to connect**.
 
-- Problems or ideas: [open an issue](https://github.com/Emruz/motiv-releases/issues)
+- Problems or ideas: **Report a problem** or **Suggest a feature** in **Settings → Getting started** (no GitHub account needed). On versions before 0.33, [open an issue](https://github.com/Emruz/motiv-releases/issues).
 - Security issues: see the [security policy](SECURITY.md); please don't open a public issue.
 - [Licence](LICENSE.md) · [Privacy policy](PRIVACY_POLICY.md) · [Third-party notices](THIRD-PARTY-NOTICES.md)
 
