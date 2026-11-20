@@ -25,12 +25,14 @@ Builds aren't code-signed yet. On a Mac, the first time, right-click Motiv in Ap
 
 ## Updates
 
-**About → Check for Updates** tells you when a new version is here and links to it. Download and install it over the old one (on Linux, install the new `.deb` or replace the AppImage); your meetings and settings stay.
+Motiv checks for updates on its own, or use **About → Check for Updates**. When a new version is out, download it and install it over the old one (on Linux, install the new `.deb` or replace the AppImage). Your meetings and settings stay. Each release lists its highlights; **About → What's new** in the app has the full notes.
 
 ## Help
 
-- [Connecting calendars](docs/CALENDAR_SETUP.md)
-- [Privacy policy](PRIVACY_POLICY.md)
-- Problems or ideas: [open an issue](https://github.com/Emruz/motiv-releases/issues)
+Help is in the app, under **Settings → Getting started**: help topics (including connecting calendars), the setup wizard, the in-meeting guide and What's new.
 
-This repository holds Motiv's releases and user docs; the source code is private.
+- Problems or ideas: [open an issue](https://github.com/Emruz/motiv-releases/issues)
+- Security issues: see the [security policy](SECURITY.md); please don't open a public issue.
+- [Licence](LICENSE.md) · [Privacy policy](PRIVACY_POLICY.md) · [Third-party notices](THIRD-PARTY-NOTICES.md)
+
+This repository holds Motiv's installers and policies; the source code is private.
