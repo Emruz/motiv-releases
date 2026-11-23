@@ -21,7 +21,17 @@ Each download has a matching `.sha256` file. To check a download, put both in on
 - Linux: `sha256sum -c Motiv_<version>_amd64.deb.sha256`
 - Windows (PowerShell): `Get-FileHash Motiv_<version>_x64-setup.exe`, and compare the result with the `.sha256` file.
 
-Builds aren't code-signed yet. On a Mac, the first time, right-click Motiv in Applications and choose **Open**. On Windows, if SmartScreen appears, choose **More info → Run anyway**.
+From 0.34.0, each release also has `SHA256SUMS.txt`, signed with the Motiv release key (`SHA256SUMS.txt.asc`), to check a download came from Motiv. With [GnuPG](https://gnupg.org) installed, put the downloads, both files and [motiv-release-key.asc](motiv-release-key.asc) in one folder and run:
+
+```
+gpg --import motiv-release-key.asc
+gpg --verify SHA256SUMS.txt.asc SHA256SUMS.txt
+shasum -a 256 -c --ignore-missing SHA256SUMS.txt
+```
+
+`gpg` should say "Good signature from Shahin Pirooz (Motiv releases)" with key fingerprint `131A 2571 816F 5C60 0F5B 75FC 1511 0610 DE8A 204F`. On Linux use `sha256sum` in place of `shasum -a 256`.
+
+From 0.34.0, the Mac app is signed by Shahin Pirooz and notarized by Apple, so it opens normally. Older Mac versions aren't: the first time, right-click Motiv in Applications and choose **Open**. Windows builds aren't code-signed yet: if SmartScreen appears, choose **More info → Run anyway**.
 
 ## Updates
 
